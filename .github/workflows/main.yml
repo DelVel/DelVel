@@ -4,8 +4,6 @@ name: Metrics
 on:
   schedule: 
     - cron: 0 0 1 * *
-  push:
-    branches: [ master ]
   workflow_dispatch:
   
 jobs:
@@ -23,6 +21,4 @@ jobs:
           plugin_isocalendar: yes
           plugin_languages: yes
           plugin_habits: yes
-          plugin_licenses: yes
           plugin_followup: yes
-          plugin_achievements: yes
